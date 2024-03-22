@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar Emergencia</title>
+    <link rel="stylesheet" href="EmergenciaStyles.css">
+</head>
+<body>
+    <section class="container">
+        <div>
+        <h1>Reportar Emergencia</h1>
+        <form action="submit_emergency.php" method="POST">
+            <label for="emergency_type">Tipo de Emergencia:</label>
+            <select name="emergency_type" id="emergency_type">
+                <option value="incendio">Incendio</option>
+                <option value="accidente">Accidente</option>
+                <option value="robo">Robo</option>
+                <option value="salud">Emergencia de Salud</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <label for="description">Descripción:</label>
+            <textarea name="description" id="description" rows="6" placeholder="Describe la emergencia" paddin></textarea>
+            <button type="submit">Reportar</button>
+        </form>
+    </div>
+    </section>
+    <section class="container">
+        <div class="emergency_container">
+        <form>
+            <table>
+                <tr>
+                  <th>Tipo de Emergencia</th>
+                  <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>Robo</td>
+                    <td class="SinAtender">Sin Atender</td>
+                  </tr>
+                <tr>
+                  <td>Accidente</td>
+                  <td class="EnProceso">En proceso</td>
+                </tr>
+                <tr>
+                  <td>Accidente</td>
+                  <td class="Atendida">Atendida</td>
+                </tr>
+                <tr>
+                  <td>Robo</td>
+                  <td class="Atendida">Atendida</td>
+                </tr>
+                <tr>
+                  <td>Accidente</td>
+                  <td class="Atendida">Atendida</td>
+                </tr>
+                <tr>
+                  <td>Robo</td>
+                  <td class="Atendida">Atendida</td>
+                </tr>
+              </table>
+        </form>
+    </div>
+    </section>
+</body>
+</html>
